@@ -7,13 +7,19 @@ package TDListJ2;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
+
+
 /**
  *
  * @author khali
  */
 public class Groupe {
     private String titre;
-    List<Enfant> listEnfants=new ArrayList<Enfant>();
+List<Enfant> listEnfants=new ArrayList<Enfant>();
+
+    // List<Type> nomVariable= new ArrayList<Type>();
 
     public String getTitre() {
         return titre;
@@ -34,11 +40,11 @@ public class Groupe {
     public void addEnfant(Enfant en)
     {
     
-    listEnfants.add(en);
+    listEnfants.add(en); //si le type de l'élement est Object on a besoin d'une instance
     }
     public void lister()
     {
-    for(Enfant en:listEnfants)
+    for(Enfant en : listEnfants)
     {
         System.out.println(en.toString());
     }
