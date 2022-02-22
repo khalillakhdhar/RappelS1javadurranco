@@ -18,7 +18,7 @@ public class Test {
         Calculer c=new Calculer();
         System.out.println(c.divisibilte(425));
         c.intervalle(5, 17);
-        
+        System.out.println("le ppcm est: "+c.ppcm(16, 12));        
     }
     
 }

@@ -30,10 +30,31 @@ public class Calculer {
     {
         System.out.println(i);
     }
-    
+    }   
+    }
+    public int pgcd(int a,int b)
+    {
+    while(a!=b)
+    {
+    if(a>b)
+        a=a-b;
+    else
+        b=b-a;
     
     }
+    return a;
+    /*
+    a=16 ,b=12
+    a=16-12=4
+    b=12-4=8
+    b=8-4=4
     
+     */
+       
+    }
+    public int ppcm(int a,int b)
+    {
+    return (a*b) / pgcd(a, b);
     
     
     }
