@@ -19,7 +19,9 @@ public class Tableaux {
         //System.out.println(noms[2]); // nullpointerFound
       try
       {
-        System.out.println(voitures[5]); //ArrayOutOfBound
+        System.out.println(voitures[5]);
+        
+//ArrayOutOfBound
       }
       catch(Exception ex)
       {
