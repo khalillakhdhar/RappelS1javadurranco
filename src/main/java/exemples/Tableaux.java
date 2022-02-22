@@ -16,7 +16,18 @@ public class Tableaux {
     int[] notes={12,14,22};
     String[] voitures={"citroen","BMW","Audi"};
     //noms[0]="test";
-    
+        //System.out.println(noms[2]); // nullpointerFound
+      try
+      {
+        System.out.println(voitures[5]); //ArrayOutOfBound
+      }
+      catch(Exception ex)
+      {
+          //System.out.println("la voiture n'existe pas");
+      
+      }
+        
+        
    // System.out.println(notes[2]);
    //methode 1 boucle et initialisation
    for(int i=0;i<notes.length;i++)
@@ -29,7 +40,14 @@ public class Tableaux {
        System.out.println(car);
    
    }
-    
+//       int i=8;
+// MemoryOutOfBound
+//    boolean x=true;
+//    while(x==true)
+//    {
+//    i++;
+//    
+//    }
     
     }
     

@@ -14,7 +14,7 @@ import java.util.List;
 public class ListsAndArrayLists {
     public static void main(String args[])
     {
-    List<String> noms = new ArrayList<String>();
+    List<String> noms = new ArrayList<String>(); // intialisation new ArrayList<String>()
     noms.add("test1"); //nom de liste.add(valeur)
     noms.add("teste2");
     noms.set(0, "personalisé");
