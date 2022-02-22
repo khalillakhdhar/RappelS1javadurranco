@@ -10,7 +10,6 @@ package com.mycompany.rappels1javadurranco.ex1;
  */
 public class Truck extends Vehicule {
   private int loadcapacity,noOfContainers;
-private int vehicule_id;
 
     public int getLoadcapacity() {
         return loadcapacity;
@@ -28,24 +27,17 @@ private int vehicule_id;
         this.noOfContainers = noOfContainers;
     }
 
-    public int getVehicule_id() {
-        return vehicule_id;
-    }
+ 
 
-    public void setVehicule_id(int vehicule_id) {
-        this.vehicule_id = vehicule_id;
-    }
-
-    public Truck(int loadcapacity, int noOfContainers, int vehicule_id, int id_vehicule, String type, String manufacturer) {
+    public Truck(int loadcapacity, int noOfContainers, int id_vehicule, String type, String manufacturer) {
         super(id_vehicule, type, manufacturer);
         this.loadcapacity = loadcapacity;
         this.noOfContainers = noOfContainers;
-        this.vehicule_id = vehicule_id;
     }
 
     @Override
     public String toString() {
-        return "Truck{" + "loadcapacity=" + loadcapacity + ", noOfContainers=" + noOfContainers + ", vehicule_id=" + vehicule_id + '}'+super.toString();
+        return "Truck{" + "loadcapacity=" + loadcapacity + ", noOfContainers=" + noOfContainers +'}'+super.toString();
     }
 
 
